@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="@color/black_transparant"
+    android:backgroundTintMode="src_atop"
+    tools:context=".ViewActivity">
+
+    <LinearLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/banner_corner"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="5sp"
+            android:src="@drawable/beautee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BEAUTEE PROGRAM 2021"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="80px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/main_content_corners">
+
+            <TextView
+                android:id="@+id/lbl_namalengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:labelFor="@+id/isi_namalengkap"
+                android:text="Full Name:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/isi_namalengkap"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_namalengkap"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbl_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isi_namalengkap"
+                android:layout_marginLeft="10dp"
+                android:labelFor="@+id/isi_nickname"
+                android:text="Nickname:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/isi_nickname"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_nickname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbl_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isi_nickname"
+                android:layout_marginLeft="10dp"
+                android:labelFor="@+id/isi_email"
+                android:text="Email:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/isi_email"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_email"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbl_domisili"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isi_email"
+                android:layout_marginLeft="10dp"
+                android:labelFor="@+id/isi_domisili"
+                android:text="Domicile:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/isi_domisili"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_domisili"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbl_socmed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isi_domisili"
+                android:layout_marginLeft="10dp"
+                android:labelFor="@+id/isi_socmed"
+                android:text="Social Media:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/isi_socmed"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_socmed"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbl_skintype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isi_socmed"
+                android:layout_marginLeft="10dp"
+                android:labelFor="@+id/isi_skintype"
+                android:text="Skin Type:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/isi_skintype"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_skintype"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lbl_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isi_skintype"
+                android:layout_marginLeft="10dp"
+                android:labelFor="@+id/isi_rating"
+                android:text="Ambiance to Join Us:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/isi_rating"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lbl_rating"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
